@@ -1,4 +1,4 @@
-const findTheOldest = function (array) {
+const findTheOldest = function(array) {
   return array.reduce((oldest, currentPerson) => {
     const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
     const currentAge = getAge(
@@ -9,7 +9,7 @@ const findTheOldest = function (array) {
   });
 };
 
-const getAge = function (birth, death) {
+const getAge = function(birth, death) {
   if (!death) {
     death = new Date().getFullYear();
   }
